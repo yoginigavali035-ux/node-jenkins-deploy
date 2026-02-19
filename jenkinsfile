@@ -10,7 +10,7 @@ pipeline {
         REMOTE_PATH    = '/home/ubuntu/node-app'
     }
     
-    #it will run on jenkins-master
+
 
     stages {
         stage('Clone Repository') {
