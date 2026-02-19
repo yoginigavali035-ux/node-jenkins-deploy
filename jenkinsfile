@@ -2,16 +2,16 @@ pipeline {
     agent any
 
     environment {
-        SERVER_IP      = '172.31.1.174'
+        SERVER_IP      = '172.31.40.143'
         SSH_CREDENTIAL = 'node-app-key'
-        REPO_URL       = 'https://github.com/iamtruptimane/node-js-app-CICD.git'
+        REPO_URL       = 'https://github.com/yoginigavali035-ux/node-jenkins-deploy.git'
         BRANCH         = 'main'
         REMOTE_USER    = 'ubuntu'
         REMOTE_PATH    = '/home/ubuntu/node-app'
     }
     
     #it will run on jenkins-master
-    
+
     stages {
         stage('Clone Repository') {
             steps {
